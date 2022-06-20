@@ -56,5 +56,11 @@ def roll15():
 
     return e
 
-# Call the function
-print(roll15())
+# Check the probability of each number
+test = []
+for i in range(10000):
+    test.append(roll15())
+n = 1
+for p in range(15):
+    print(test.count(n))
+    n += 1
